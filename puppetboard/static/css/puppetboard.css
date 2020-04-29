@@ -106,6 +106,10 @@ h1.ui.header.no-margin-bottom {
   padding: 1em;
 }
 
+.ui.menu {
+  border-radius: 0;
+}
+
 .ui.menu.darkblue {
   background-color: #2C3E50;
 }
