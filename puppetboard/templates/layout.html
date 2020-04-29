@@ -21,6 +21,9 @@
     {% endif %}
     <link href="{{ url_for('static', filename='css/c3.min.css') }}" rel="stylesheet" />
     <link href="{{ url_for('static', filename='css/puppetboard.css') }}" rel="stylesheet" />
+    {% if config.CUSTOM_CSS %}
+    <link href="{{ url_for('static', filename='css/puppetboard.custom.css') }}" rel="stylesheet" />
+    {% endif %}
 
     {% if config.OFFLINE_MODE %}
       <script src="{{ url_for('static', filename='jquery-3.4.1/jquery.min.js') }}"></script>
